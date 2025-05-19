@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - NovaNest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Nova<span>Nest</span></h1>
+                    </a>
+                </div>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" id="account-icon"><i class="fas fa-user"></i></a>
+                    <a href="cart.html" id="cart-icon" class="active">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                    <div class="hamburger" id="menu-btn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-container" id="search-container">
+        <div class="container">
+            <form id="search-form">
+                <input type="text" placeholder="Search for products...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button id="close-search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Cart Banner -->
+        <section class="page-banner cart-banner">
+            <div class="container">
+                <h1>Your Shopping Cart</h1>
+                <p>Review and checkout your selected items</p>
+            </div>
+        </section>
+
+        <!-- Cart Content -->
+        <section class="cart-content">
+            <div class="container">
+                <div id="cart-empty" class="cart-empty hidden">
+                    <div class="empty-cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h2>Your cart is empty</h2>
+                    <p>Looks like you haven't added any items to your cart yet.</p>
+                    <a href="shop.html" class="btn">Continue Shopping</a>
+                </div>
+
+                <div id="cart-items-container">
+                    <div class="cart-header">
+                        <div class="cart-row">
+                            <div class="cart-col product-col">Product</div>
+                            <div class="cart-col price-col">Price</div>
+                            <div class="cart-col quantity-col">Quantity</div>
+                            <div class="cart-col total-col">Total</div>
+                            <div class="cart-col action-col"></div>
+                        </div>
+                    </div>
+
+                    <div id="cart-items" class="cart-items">
+                        <!-- Cart items will be loaded from JavaScript -->
+                    </div>
+
+                    <div class="cart-actions">
+                        <div class="coupon-section">
+                            <form id="coupon-form">
+                                <input type="text" placeholder="Coupon code" id="coupon-code">
+                                <button type="submit" class="btn-outline">Apply Coupon</button>
+                            </form>
+                        </div>
+                        <button id="update-cart" class="btn-outline">Update Cart</button>
+                    </div>
+                </div>
+
+                <div class="cart-summary-container">
+                    <div class="cart-summary">
+                        <h2>Cart Summary</h2>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="cart-subtotal">R0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="cart-shipping">R0.00</span>
+                        </div>
+                        <div class="summary-row discount-row hidden" id="discount-row">
+                            <span>Discount</span>
+                            <span id="cart-discount">-R0.00</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total</span>
+                            <span id="cart-total">R0.00</span>
+                        </div>
+                        <button id="checkout-btn" class="btn btn-large">Proceed to Checkout</button>
+                        <div class="continue-shopping">
+                            <a href="shop.html"><i class="fas fa-arrow-left"></i> Continue Shopping</a>
+                        </div>
+                    </div>
+
+                    <div class="shipping-info">
+                        <h3>Shipping Information</h3>
+                        <p><i class="fas fa-truck"></i> Free shipping on orders over R1000 within South Africa</p>
+                        <p><i class="fas fa-globe-africa"></i> International shipping available to most countries</p>
+                        <p><i class="fas fa-box"></i> Secure packaging for all fragile items</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- You May Also Like -->
+        <section class="related-products">
+            <div class="container">
+                <h2 class="section-title">You May Also Like</h2>
+                <div class="products-grid" id="related-products">
+                    <!-- Related products will be loaded from JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <h2>Nova<span>Nest</span></h2>
+                    </div>
+                    <p>Bringing the best of South African craftsmanship to your doorstep.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="shop.html?category=home-decor">Home Decor</a></li>
+                        <li><a href="shop.html?category=jewelry">Jewelry</a></li>
+                        <li><a href="shop.html?category=fashion">Fashion</a></li>
+                        <li><a href="shop.html?category=art">Art</a></li>
+                        <li><a href="shop.html?category=gifts">Gifts</a></li>
+                        <li><a href="shop.html?category=gaming">Gaming</a></li>
+                        <li><a href="shop.html?category=computer-office">Computer & Office</a></li>
+                        <li><a href="shop.html?category=electronics">Electronics</a></li>
+                        <li><a href="shop.html?category=sport-fitness">Sport & Fitness</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Cape Town, South Africa</li>
+                        <li><i class="fas fa-phone"></i> +27 21 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@novanest.co.za</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NovaNest. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

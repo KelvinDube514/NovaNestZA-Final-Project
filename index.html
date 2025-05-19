@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaNest - Premium South African E-Commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Nova<span>Nest</span></h1>
+                    </a>
+                </div>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="#" id="search-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" id="account-icon"><i class="fas fa-user"></i></a>
+                    <a href="cart.html" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                    <div class="hamburger" id="menu-btn">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-container" id="search-container">
+        <div class="container">
+            <form id="search-form">
+                <input type="text" placeholder="Search for products...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button id="close-search"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section with Slider -->
+        <section class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="images/South African Handcrafted Goods.jpg" alt="South African Handcrafted Goods" width="300" height="200">
+                    <div class="slide-content">
+                        <h2>South African Craftsmanship</h2>
+                        <p>Discover unique handcrafted products made with passion</p>
+                        <a href="shop.html" class="btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/Premium Home Decor.jpg" alt="Premium Home Decor" width="300" height="200">
+                    <div class="slide-content">
+                        <h2>Premium Home Decor</h2>
+                        <p>Transform your space with our exclusive collection</p>
+                        <a href="shop.html" class="btn">Explore</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/New Season Arrivals.jpg" alt="New Season Arrivals" width="300" height="200">
+                    <div class="slide-content">
+                        <h2>New Season Arrivals</h2>
+                        <p>Be the first to shop our latest collections</p>
+                        <a href="shop.html" class="btn">View Collection</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/Gaming.jpg" alt="Gaming" width="300" height="200">
+                    <div class="slide-content">
+                        <h2>Gaming Essentials</h2>
+                        <p>Level up your gaming experience with our premium selection</p>
+                        <a href="shop.html?category=gaming" class="btn">Game On</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/Computer & Office.jpg" alt="Computer & Office" width="300" height="200">
+                    <div class="slide-content">
+                        <h2>Computer & Office</h2>
+                        <p>Boost your productivity with our tech and office solutions</p>
+                        <a href="shop.html?category=computer-office" class="btn">Shop Tech</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/Electronics.jpg" alt="Electronics" width="300" height="200">
+                    <div class="slide-content">
+                        <h2>Electronics</h2>
+                        <p>Discover the latest gadgets and electronic innovations</p>
+                        <a href="shop.html?category=electronics" class="btn">Explore Gadgets</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/Sport & Fitness.jpg" alt="Sport & Fitness" width="300" height="200">
+                    <div class="slide-content">
+                        <h2>Sport & Fitness</h2>
+                        <p>Achieve your fitness goals with our quality equipment</p>
+                        <a href="shop.html?category=sport-fitness" class="btn">Get Active</a>
+                    </div>
+                </div>
+                <button class="slider-btn prev" id="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next" id="next"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                    <span class="dot" data-slide="5"></span>
+                    <span class="dot" data-slide="6"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Categories -->
+        <section class="featured-categories">
+            <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <img src="images/Home Decor.jpg" alt="Home Decor" width="300" height="200" class="category-image">
+                        <div class="category-content">
+                            <h3>Home Decor</h3>
+                            <a href="shop.html?category=home-decor" class="btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/Jewelry.jpg" alt="Jewelry" width="300" height="200" class="category-image">
+                        <div class="category-content">
+                            <h3>Jewelry</h3>
+                            <a href="shop.html?category=jewelry" class="btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/Fashion.jpg" alt="Fashion" width="300" height="200" class="category-image">
+                        <div class="category-content">
+                            <h3>Fashion</h3>
+                            <a href="shop.html?category=fashion" class="btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/Art.jpg" alt="Art" width="300" height="200" class="category-image">
+                        <div class="category-content">
+                            <h3>Art</h3>
+                            <a href="shop.html?category=art" class="btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/Gaming.jpg" alt="Gaming" width="300" height="200" class="category-image">
+                        <div class="category-content">
+                            <h3>Gaming</h3>
+                            <a href="shop.html?category=gaming" class="btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/Computer & Office.jpg" alt="Computer & Office" width="300" height="200" class="category-image">
+                        <div class="category-content">
+                            <h3>Computer & Office</h3>
+                            <a href="shop.html?category=computer-office" class="btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/Electronics.jpg" alt="Electronics" width="300" height="200" class="category-image">
+                        <div class="category-content">
+                            <h3>Electronics</h3>
+                            <a href="shop.html?category=electronics" class="btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <img src="images/Sport & Fitness.jpg" alt="Sport & Fitness" width="300" height="200" class="category-image">
+                        <div class="category-content">
+                            <h3>Sport & Fitness</h3>
+                            <a href="shop.html?category=sport-fitness" class="btn-outline">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="section-title">Featured Products</h2>
+                <div class="products-grid" id="featured-products">
+                    <!-- Products will be loaded from JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <p>"I absolutely love the quality of the handcrafted items from NovaNest. The attention to detail is remarkable!"</p>
+                            <div class="testimonial-author">
+                                <img src="images/customer1.jpg" alt="Customer" width="100" height="100" class="testimonial-image">
+                                <div>
+                                    <h4>Sarah Nkosi</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"Fast shipping and excellent customer service. The products are even more beautiful in person than in the photos!"</p>
+                            <div class="testimonial-author">
+                                <img src="images/customer2.jpg" alt="Customer" width="100" height="100" class="testimonial-image">
+                                <div>
+                                    <h4>David van der Merwe</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <p>"NovaNest has become my go-to shop for unique gifts. Everyone loves the South African craftsmanship!"</p>
+                            <div class="testimonial-author">
+                                <img src="images/customer3.jpg" alt="Customer" width="100" height="100" class="testimonial-image"   >
+                                <div>
+                                    <h4>Thandi Moyo</h4>
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn testimonial-prev" id="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn testimonial-next" id="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Join Our Newsletter</h2>
+                    <p>Subscribe to receive updates on new arrivals, special offers and other discount information.</p>
+                    <form id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <h2>Nova<span>Nest</span></h2>
+                    </div>
+                    <p>Bringing the best of South African craftsmanship to your doorstep.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="shop.html?category=home-decor">Home Decor</a></li>
+                        <li><a href="shop.html?category=jewelry">Jewelry</a></li>
+                        <li><a href="shop.html?category=fashion">Fashion</a></li>
+                        <li><a href="shop.html?category=art">Art</a></li>
+                        <li><a href="shop.html?category=gifts">Gifts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, Cape Town, South Africa</li>
+                        <li><i class="fas fa-phone"></i> +27 21 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@novanest.co.za</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NovaNest. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
